@@ -1,8 +1,14 @@
 #!/bin/bash
 
-CAMINHO_IMAGEM=~/alura/imagens-livros
+cd ~/alura/imagens-livros/
+if [ ! -d png ]
+then
+	mkdir png
+fi
 
-for imagem in $@
+for imagem in  *.jpg
+
 	do
-		convert $CAMINHO_IMAGEM/$imagem.jpg $CAMINHO_IMAGEM/$imagem.png
+		imagem_sem_extensao=$(ls $imagem | awk -F. '{print $1}')
+		convert $imagem_sem_extensao.jpg $imagem_sem_extensao.png
 	done
