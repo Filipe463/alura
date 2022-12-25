@@ -10,8 +10,11 @@ body {
 	background: #CCCCCC;
 	padding: 30px;
 }
+.titulo-principal{
+	margin-left: 20px;
+}
 
-h1 {
+.titulo-centralizado {
 	text-align: center
 }
 
@@ -36,9 +39,7 @@ em strong {
 	padding: 20px;
 }
 
-h2 {
-	text-align: center;
-}
+
 ul {
 	display: inline-block;
 	vertical-align: top;
